@@ -11,38 +11,46 @@
 #include <string>    // std::string, std::getline
 #include <vector>    // std::vector
 
-void isPrime(int num)
+
+
+bool isPrime(int n)
 {
-    if (num = 1) 
+    if (num <= 1) 
     { 
         std::cout << "false" << std::endl; 
     }
-
-    if (num/n<num)
+    
+    int i = 2; 
+    while (i<=n std::sqrt(n))
     {
-        std::cout << "false" << std::endl;
+        if (n % mod 1 ==0)
+        {
+            return false;=
+        }
     }
-
-    if (num/n>num)
-    {
-        std::cout << "false" << std::endl;
-    }
-
-    if(num/n=num)
-    {
-        std::cout << "true" << std::endl;
-    }
+    
 }
+
 
 int main()
 {
     // Complete your homework here
-    int (n)
-    
+
 isPrime(1);
 isPrime(2);
 isPrime(27);
 isPrime(11);
+
+    std::vector<int> the_primes = {};
+    int i = 0;
+    while (i < 100)
+    {
+        if (isPrime(i) == true)
+        {
+            the_primes.push_back(i);    // append the number i to the list
+        }
+        i = i + 1;
+    }
     
     return 0;
 }
